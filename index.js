@@ -31,8 +31,17 @@ const number = () => {
 
 const changeColor = () => {
     let div = document.querySelector('div');
-    div.style.backgroundColor = `rgb(${number()}, ${number()},${number()})`;
+    div.style.backgroundColor = `rgb(${number()}, ${number()},${number()}, ${Math.random()})`;
     console.log(div.style.backgroundColor)
 }
+function test1(e) {
+    console.log(e)
+}
+
+const div1 = document.getElementById('color-button');
+div1.addEventListener('click', changeColor);
+div1.addEventListener('click', answers);
+div1.addEventListener('click', test1)
+
 // const fib = fibNumber(count);
 // elements.innerText = `Hello World ${count} ${fib}`
