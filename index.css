@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+  margin: 5px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 5%;
+  box-shadow: black 3px 10px 15px 4px;
+}
