@@ -24,5 +24,15 @@ const test = () => {
 count = 0;
 elements.innerHTML = `Hello, World count ${count+1} fib number ${fibNumber(count)}`;
 }
+
+const number = () => {
+    return Math.floor(Math.random() * (255 - 0) + 0)
+}
+
+const changeColor = () => {
+    let div = document.querySelector('div');
+    div.style.backgroundColor = `rgb(${number()}, ${number()},${number()})`;
+    console.log(div.style.backgroundColor)
+}
 // const fib = fibNumber(count);
 // elements.innerText = `Hello World ${count} ${fib}`
